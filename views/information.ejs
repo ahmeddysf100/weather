@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="/public/information.css" />
+</head>
+
+<body>
+    <div class="app-wrap">
+        <header>
+            <img src="<%= i %> " alt="">
+        </header>
+        <main>
+            <section class="location">
+                <h1 class=""><%= state %></h1>
+
+                <div class="city"><%= l %> <%= qr %> </div>
+                <div class="date"><%= d %> </div>
+            </section>
+            <div class="current">
+                <div class="temp"><%= t %> </div>
+                <div class="weather"><%= c %> </div>
+                <div class="hi-low"><%= max %> <%= min %></div>
+            </div>
+            <br>
+            <div class="ahm">AHMEDYSF100🥵</div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
